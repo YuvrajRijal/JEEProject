@@ -1,0 +1,176 @@
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #B324C1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+
+/* Style the footer */
+footer {
+  background-color: #000000;
+  padding: 5px;
+  text-align: center;
+  color: white;
+  bottom:0;
+  position:fixed;
+  width:100%;
+  height:35px;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  
+  color: white;
+}
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 100px;
+  border-radius: 10%;
+}
+
+
+/* The "Forgot password" text */
+span.psw {
+  float: left;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 100px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+
+}
+
+</style>
+</head>
+<body>
+<div class="topnav">
+  	<a href="#about">About</a>
+  	<a href="signup.html">SignUp</a>
+  	<a href="login.html">Login</a>
+	<a class="active" href="musicregistration.jsp">Home</a>
+	</div>
+
+<header>
+
+<h2>Music</h2>
+
+</header>
+	
+	
+
+	<center>
+    <form action="login" method="get"  enctype="multipart/form-data">
+	  <img src="C:\Users\Yuvi\Desktop\testnew\download.jpg" alt="Avatar" class="avatar">    
+	</br> 
+    <label for="uname"><b>Username</b></label>
+    <input type="email" placeholder="Enter Email" name="email" required></br>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="pw" required></br>
+
+    	<button type="submit">Login</button>
+`	<button type="button" class="cancelbtn">Cancel</button>
+
+  
+</form>
+
+
+<footer>
+  <p>&copy; 2020 Yuvraj.com</p>
+</footer>
+
+</body>
+</html>
